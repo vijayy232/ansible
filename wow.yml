@@ -1,5 +1,5 @@
 ---
 - hosts: all
   become: true
-  tasks"
+  tasks:
   - command: ping -c3 google.com
