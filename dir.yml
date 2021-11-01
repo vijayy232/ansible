@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - file:
+     dest: /root/welcome
+     state: touch
+     mode: 0700
