@@ -2,5 +2,9 @@
 - hosts: all
   become: true
   tasks:
-  - file: dest=/root/welcome state=touch mode=0700
+  - copy: 
+     dest: /root/welcome
+     content: |
+     welcome
+     to the world
   
