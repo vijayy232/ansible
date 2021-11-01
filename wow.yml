@@ -5,6 +5,6 @@
   - copy: 
      dest: /root/welcome
      content: |
-     welcome
-     to the world
+             welcome
+             to the world
   
