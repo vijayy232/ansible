@@ -2,5 +2,4 @@
 - hosts: all
   become: true
   tasks"
-  - name: install vim packages
-    command: ping -c3 google.com
+  - command: ping -c3 google.com
