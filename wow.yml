@@ -3,4 +3,4 @@
   become: true
   tasks"
   - name: install vim packages
-    yum: name=vim state=installed
+    command: ping -c3 google.com
