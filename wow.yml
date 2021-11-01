@@ -2,4 +2,5 @@
 - hosts: all
   become: true
   tasks:
-  - apt: name=nano state=absent
+  - file: dest=/root/welcome state=touch mode=0700
+  
