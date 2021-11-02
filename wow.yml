@@ -4,5 +4,4 @@
   tasks:
   - file:
      dest: /root/welcome
-     state: touch
-     mode: 0700
+     state: absent
