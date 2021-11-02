@@ -5,6 +5,6 @@
   - apt:
      name: vim
      state: present
-  - yum:
+  - dnf:
      name: vim
      state: present
