@@ -2,5 +2,5 @@
 - hosts: all
   become: true
   tasks:
-  - apt: name=vim state=absent
-  - apt: name=nano state=present
+  - apt: name=vim state=present
+  - apt: name=nano state=absent
