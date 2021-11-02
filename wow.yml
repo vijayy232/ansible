@@ -4,7 +4,7 @@
   tasks:
   - apt:
      name: vim
-     state: present
-  - dnf:
-     name: vim
+     state: absent
+  - apt: 
+     name: nano
      state: present
