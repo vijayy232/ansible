@@ -2,13 +2,8 @@
 - hosts: all
   become: true
   tasks:
-  - file:
-     dest: /root/welcome
-     state: touch
-     mode: 0700
-  - copy:
-     dest: /root/welcome
-     content: | 
-             Welcome to tanuku
-             entetaiment to the world
+  - apt: name=vim state=absent
+    when: ansible_os_family == ubuntu
+  - yum: name=vim state=absent
+    when: ansible_os_family == centos 
              
