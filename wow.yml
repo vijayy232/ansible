@@ -2,8 +2,8 @@
 - hosts: all
   become: true
   tasks:
-  - apt: name=vim state=absent
-    when: ansible_os_family == "Ubuntu"
-  - yum: name=vim state=absent
-    when: ansible_os_family == "CentOS"
+  - apt:
+     name: vim
+     state: absent
+     when: ansible_os_family == "Ubuntu"
              
