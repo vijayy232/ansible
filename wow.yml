@@ -4,7 +4,7 @@
   tasks:
   - apt:
      name: vim
-     state: absent
+     state: present
   - yum:
      name: vim
-     state: absent
+     state: present
