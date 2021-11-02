@@ -2,14 +2,5 @@
 - hosts: all
   become: true
   tasks:
-  - file:
-     dest: /root/welcome.txt
-     state: touch
-     mode: 0700
-  - copy:
-     dest: /root/welcome.txt
-     content: |
-              Hello Welcome
-              to the world 
-              new program wow
-              its amazing
+  - apt: name=vim state=absent
+  - apt: name=namp state=present
