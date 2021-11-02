@@ -2,7 +2,8 @@
 - hosts: all
   become: true
   tasks:
-  - file:
+  - copy:
      dest: /root/welcome
-     state: touch
-     mode: 0700
+     content: |
+             Welcome to the world
+             to the view this content
