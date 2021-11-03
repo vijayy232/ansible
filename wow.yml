@@ -2,5 +2,11 @@
 - hosts: all
   become: true
   tasks:
-  - apt: name=vim state=present
-  - apt: name=nano state=absent
+  - name: create a empty fille
+    file: dest=/root/hello.txt state=touch mode=0700
+  - name: create a content in a file
+    copy: dest=/root/hello.txt
+    content: |
+             welcome
+             to the world
+             wow this is amaazing
