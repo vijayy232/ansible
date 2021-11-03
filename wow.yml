@@ -2,14 +2,8 @@
 - hosts: all
   become: true
   tasks:
-  - name: create empty file in root
-    file:
+  - name: edit hello file
+    replace:
      dest: /root/hello.txt
-     state: touch
-     mode: 0700
-  - name: create a content in a file
-    copy:
-     dest: /root/hello.txt
-     content: |
-              welcome to the world 
-              entetainment of the program
+     regexp: welcome
+     replace: welcomes
