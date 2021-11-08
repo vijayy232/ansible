@@ -3,7 +3,4 @@
   become: true
   tasks:
   - name: edit hello file
-    replace:
-     dest: /root/hello.txt
-     regexp: welcome
-     replace: welcomes
+    file: dest=/home/harish/wow.txt state=otuch mode=0700
